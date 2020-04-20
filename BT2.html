@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<style>
+	body{
+		background-image: url("image/Anh7.gif");
+		background-repeat: no-repeat;
+		background-attachment:fixed;
+		background-size: 100% 100%;
+	}
+	#formbox{
+		width: 640px;
+		height: 400px;
+		margin-left: 770px;
+		margin-top: 400px;
+		opacity: 0.7;
+	}
+</style>
+<body>
+	<div id="formbox">
+		<form style="width:600px; margin-left: 20px" action="">
+			<fieldset>
+			<legend style ="font-size:30px; text-align: center">SIGN UP</legend>
+			<table>
+			<tr>
+			<td><label for="Lastname">Last name*:</label></td>
+			<td> <input type="text" id="Lastname" size="15"  name="Lastname" required> 
+				<label for="fname">First name*:</label> <input type="text" size="15" id="fname" name="fname" required></td>
+			</tr>
+			<tr>
+			<td><label for="Email">Email*:</label></td>	
+			<td> <input type="email" size="30" id="Email" name="Email" placeholder="example@gmail.com" required>
+				<p style="font-size: 15px; display: inline"> (Each email has only one accout)</p></td>
+			</tr>
+			<tr>
+			<td><label for="Displayname">Display name:</label></td>
+			<td><input type="text" size="30" id="Displayname" name="Displayname" pattern="[A-Za-z0-9]{6,10}" ></td>
+			<tr>
+					<td></td>
+					<td><p style="font-size: 15px"> (Only upper/lowercase letters and numbers.The string must also has a <br> minimum of four characters, and a maximum of ten.)</p></td>
+			</tr>
+
+			</tr>
+			<tr>
+			<td><label for="Password">Password*:</label></td>
+			<td><input type="password" size="30" id="Password" name="Password" required></td>
+			</tr>
+			<tr>
+			<td><label for="Re-enter">Re-enter Password*:</label></td>
+			<td><input type="password" size="30" id="Re-enter" name="Re-enter" required></td>
+			</tr>
+		    <tr>
+			<td><label for="Sex">Sex:</label></td>
+			<td><input type="radio" name="sex" value="Man" id="man" > Man
+				<input type="radio" name="sex" value="Woman" id="woman" > Woman</td>
+			</tr>
+			<tr>
+				<td><label for="Birthdate:">Birthdate</label></td>
+				<td><input type="date" id="Birthdate" name="Birthdate"></td>
+			</tr>
+			<tr>
+			<td><label for="favcolor">Favorite Color:</label></td>
+			<td><input type="color" id="favcolor" name="favcolor" value="#ff0000"></td>
+			</tr>
+
+				</table>
+			<a href="BT1.html"><input type="Submit" value="Submit"></a>
+			</fieldset> 
+		</form>
+	</div>
+</body>
+</html>
